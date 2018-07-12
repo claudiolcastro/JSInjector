@@ -1,0 +1,22 @@
+{
+  "name": "JSInjector",
+  "version": "1.0",
+  "description": "Inject JS script in any page!",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_popup" : "injector.html",
+    "default_title" : "JSInjector!"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "permissions": [
+    "declarativeContent",
+    "activeTab",
+    "storage",
+    "tabs",
+    "https://*/*",
+    "http://*/*"
+  ]
+}
